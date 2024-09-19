@@ -86,7 +86,6 @@ Upon running the application, it will:
 
 ```
 "/Space/Introduction to Project/Project Overview" https://your-confluence-instance.com/download/attachments/project_overview.mp4/data https://your-confluence-instance.com/rest/api/content/12345/child/attachment/67890/data
-Fetching attachments for media type: audio/m4a
 "/Space/Introduction to Project/Voice Overview" https://your-confluence-instance.com/download/attachments/voice_overview.m4a/data https://your-confluence-instance.com/rest/api/content/12345/child/attachment/67891/data
 "/Space/Project Components/Component A" https://your-confluence-instance.com/download/attachments/component_a.mp4/data https://your-confluence-instance.com/rest/api/content/12346/child/attachment/67892/data
 "/Space/Project Components/Component B" https://your-confluence-instance.com/download/attachments/component_b.m4a/data https://your-confluence-instance.com/rest/api/content/12346/child/attachment/67893/data
@@ -150,8 +149,3 @@ Contributions are welcome! To contribute:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-> **Note:** The current implementation uses `unwrap()` for error handling, which will cause the application to panic on encountering any errors. This is suitable for development and testing purposes only. For a production-ready version, consider implementing robust error handling mechanisms.
-
