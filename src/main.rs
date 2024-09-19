@@ -105,7 +105,6 @@ impl Confluence {
                 println!("Fetching next page of contents...\n");
             } else {
                 // No more pages to fetch.
-                println!("All contents processed.");
                 break;
             }
         }
@@ -192,7 +191,7 @@ async fn main() {
     let wiki = Confluence::new("https://wiki.onap.org", "rest/api");
 
     // Define media types to fetch
-    let media_types = ["video/mp4"];
+    let media_types = ["video/mp4", "audio/m4a"];
 
     // Process contents and attachments incrementally
     wiki.process_all_contents(&media_types, 50).await;
