@@ -169,6 +169,8 @@ async fn api_call<T: serde::de::DeserializeOwned>(url: &str) -> T {
         .get(url)
         .header("CONTENT_TYPE", "application/json")
         .header("ACCEPT", "application/json")
+///        .header("X-Atlassian-Token", "nocheck") /// if using token
+///        .header("Authorization", "Bearer TOKEN") /// add your token here
         .send()
         .await
         .unwrap();
